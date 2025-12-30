@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="quizlogo.png" alt="Logo">QuizzSparks</div>
+        <nav class="scrollable-menu">
+            <ul>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <h1>Profile</h1>
+            <div class="profile-info">
+                <p><strong>Name:</strong> <span id="username">Loading...</span></p>
+                <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+                <p><strong>Member Since:</strong> <span id="member-since">Loading...</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 QuizzSparks</p>
+    </footer>
+
+    <script src="profile.js"></script>
+    <div class="back-button-container">
+        <button class="back-button" onclick="history.back()">Back</button>
+    </div>
+    
+</body>
+</html>

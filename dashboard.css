@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eaf4e1; 
+  color: #333;
+}
+
+header {
+  background-color: #4b8725; 
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+  font-size: 24px;
+  color: #438412; 
+}
+
+.motivational-quote {
+  font-size: 18px;
+  color: #438412;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  background-color: #f4f9f0; 
+  border: 1px solid #d0e3c1; 
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+.stat-box h3 {
+  font-size: 18px;
+  color: #438412; 
+}
+
+.stat-box p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #438412; 
+}
+
+.stat-box.visible {
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.recent-activity {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h2 {
+  font-size: 22px;
+  color: #438412; 
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #d1e6c0; 
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.activity-table th, .activity-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.activity-table th {
+  background-color: #438412;
+  color: white;
+}
+
+.activity-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

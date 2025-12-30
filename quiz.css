@@ -1,0 +1,134 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 32px;
+  color: #438412;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.question-block {
+  margin-bottom: 30px;
+}
+
+.question-text {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.options label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #438412;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+button:hover {
+  background-color: #3b7b0e;
+}
+
+button:active {
+  background-color: #33660e;
+}
+.header {
+  width: 100%;
+  background-color: #5b9f47; 
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 100; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 2px;
+  height: 2px;
+  margin-left: 20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #d1e600; 
+}

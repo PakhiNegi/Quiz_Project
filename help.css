@@ -1,0 +1,124 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f1f8e9;
+    color: #438412;
+}
+
+header {
+    background-color: #438412;
+    color: #f9fbe7;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+main {
+    padding: 40px;
+}
+
+.help-section {
+    background: #f9fbe7;
+    border: 2px solid #aed581;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(67, 132, 18, 0.2);
+}
+
+.help-section h1 {
+    color: #438412;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.faq {
+    margin-top: 30px;
+}
+
+.faq h2 {
+    color: #438412;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #438412;
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #616930;
+}
+
+.contact-support {
+    margin-top: 40px;
+}
+
+.contact-support h2 {
+    color: #438412;
+    font-size: 1.5rem;
+}
+
+.contact-support p {
+    font-size: 1rem;
+    color: #616930;
+}
+
+.contact-support a {
+    color: #438412;
+    text-decoration: none;
+}
+
+.back-button-container {
+    text-align: left;
+    margin: 20px;
+}
+
+.back-button {
+    background-color: #438412;
+    color: #f9fbe7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #33660e;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #438412;
+    color: #f9fbe7;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

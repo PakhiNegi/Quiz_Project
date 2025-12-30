@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-box">
+        <form id="hidden-form" class="hidden-form" method="POST" action="submit_quiz.php">
+            <input type="hidden" name="answers" id="answersInput">
+        </form>
+        
+        <div id="quiz-content">
+            <h2 id="question-text">Loading...</h2>
+            <div id="options"></div>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Menu</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header>
+    <div class="logo">QuizzSparks
+    <img src='quizlogo.png' alt="QuizzSparks Logo"></div>
+    
+    <nav>
+      <ul>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quiz-selection-container">
+      <h2>Select Subject and Difficulty</h2>
+      <form action="start_quiz.php" method="post" class="quiz-form">
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select name="subject" id="subject" required>
+            <option value="PHP">PHP</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="DBMS">DBMS</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Difficulty:</label>
+          <select name="difficulty" id="difficulty" required>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <button type="submit">Start Quiz</button>
+      </form>
+    </section>
+  </main>
+  <div class="back-button-container">
+    <button class="back-button" onclick="history.back()">Back</button>
+</div>
+
+  <footer>
+    <p>&copy; QuizzSparks</p>
+  </footer>
+</body>
+</html>
